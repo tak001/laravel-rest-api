@@ -10,6 +10,8 @@
 # init
 - .env.exampleをコピーして、.envファイルを作成
 - composer install
+- php artisan key:generate
+- php artisan migrate
 
 ## About Laravel
 
