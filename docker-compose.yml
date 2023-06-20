@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:8.0.28-debian
+    command: mysqld --default-authentication-plugin=mysql_native_password --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: laravel
+      MYSQL_USER: laravel
+      MYSQL_PASSWORD: password
+    expose:
+      - 3306
+    ports:
+      - 3306:3306
+    volumes:
+      - ./data:/var/lib/mysql

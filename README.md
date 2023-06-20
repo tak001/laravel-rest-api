@@ -9,9 +9,18 @@
 
 # init
 - .env.exampleをコピーして、.envファイルを作成
+- brew upgrede
+- brew install php@8.1
+- brew link --overwrite --force php@8.1
+- composer clear-cache
+- composer self-update
 - composer install
 - php artisan key:generate
 - php artisan migrate
+
+# docker
+- docker compose rm -s -f -v
+- docker compose up
 
 ## About Laravel
 
